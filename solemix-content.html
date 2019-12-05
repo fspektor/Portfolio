@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<head>
+	<title>Franchesca Spektor</title>
+		<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i|Oswald|Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+<body>
+        <div id="nav-bar">
+                <li id="title_text" class="push"><a id="nav_text" href="assets/img/Fspektor_CV.pdf"target="_blank">Resume / CV</a></li>
+                <li id="title_text"  id="nav_text"><a id="nav_text" href="manifesto.html">A Cyborg Design Manifesto</a></li>
+        </div>
+
+	<div class="page-container">
+
+		<div class="header-container">
+			<div id="project-path"><a id="generic_link" href="index.html">← Portfolio / SoleMix</a></div>
+            <div id="project-tag">SoleMix: Dance to Your Own Beat</div>
+            <div id="project-graph">Sole Mix is footwear that uses embedded sensors to generate music from dance moves.
+                
+                <p>
+                        This is a project made for Professor Eric Paulos' Critical Making class at UC Berkeley, created in collaboration with
+                        Aura Barrera, James Smith, and Shreyas Bhayana.
+                </p>
+            </div>
+
+            <div class="content-container">
+                    <div class="intro-container">
+
+                        <div class="ind-container">
+        
+                            <div id="project-variable">Context</div>
+                            <div id="listing-variable">Design Innovation Course</div>
+                            
+                        </div>
+        
+                         <div class="ind-container">
+        
+                            <div id="project-variable">Role</div>
+                            <div id="listing-variable">Concept<br>User-research<br>Fabrication</div>
+        
+                        </div>
+        
+                        <div class="ind-container">
+        
+                            <div id="project-variable">Timeline</div>
+                            <div id="listing-variable">March 2019 - April 2019</div>
+        
+                        </div>
+                    </div>     
+                </div>		
+		</div>      
+    </div>
+
+<img class="img-container s-one"></img>    
+
+    <div class="page-container">
+        
+             <div class="intro-container">
+                 
+                       
+                <div class="title-container">
+
+                    <div id="title-copy">Our Concept</div>
+                                    
+                </div>
+        
+                <div id="listing-copy">
+                        
+                    <div id="quote-format"><p>Project prompt: create a novel transportation mechanism</p></div>
+                        
+                        We play with a more abstract idea of "transportation" to build a thin, open-toed dance slipper that uses embedded biosensing to generate music from dance moves.
+                        Data collected by our hidden sensors is mapped to kicking, tapping, and directional momentum.
+                        Through tracking different movements of the feet, the generated sounds flow together to create unique soundscapes. 
+                        
+                        <p>With these various customizable inputs, Sole Mix can facilitate solo dance,
+                                as well as group and partner interactions. During individual use, a dancer can record soundscapes
+                                for solo practice or make music in front of a live crowd.
+                        </p>
+                        SoleMix also supports partner dancing and dance instruction.
+                        Users can hone their movement by matching beats and pitch to an instructor’s live demo,
+                        or use tutorials to match movement and sound together for rhythm training.
+                        
+                    
+        
+                </div>
+            </div>
+          
+    </div>
+
+ <img class="img-container s-two"></img> 
+ 
+ <div class="page-container">
+          
+      <div class="intro-container">
+           
+            <div class="title-container">
+                        
+                <div id="title-copy">Inspiration & Context</div>
+                                                
+            </div>
+                        
+                 <div id="listing-copy">
+                    
+                    We were inspired by a project called E-Traces, which mapped ballet foot movements to
+                    programmatically generated “ink” strokes, and Imogen Heap’s Mi.Mu gloves, which could be controlled
+                    like an instrument.
+                    
+                    <p>These examples sat on opposite ends of the input/output control spectrum. While Mi.Mu gives users
+                        fine-tuned control of the output, E-Traces simply maps movement to a novel medium.
+                        SoleMix straddles this spectrum by providing both creative control and explorative outputs.</p>
+
+            
+            </div>                             
+    
+         </div>
+ </div>
+
+<img class="img-container s-three"></img>
+
+    <div class="page-container">
+        
+        <div class="intro-container">
+               
+                <div class="title-container">
+
+                    <div id="title-copy">User Research</div>
+                            
+                </div>
+
+
+                <div id="listing-copy">
+
+                        We conducted interviews with several dancers of different styles, with backgrounds ranging from Lindy Hop to Blues to Fusion dance.
+                        
+                        <p>Dancers told us about several common moves which they had already begun associating with instrumentation.
+                                For instance, they pictured a cymbal at the end of a kick step, and associated a tom with a foot tap.
+                                These mappings, our interviewees explained, would feel most intuitive as they moved.</p>
+                        
+                        <p>Based on our interviewees' preferred footwear among their various dance styles, we settled on a slipper for maximum flexibility.
+                                Finally, we delved into the nuances between partnered and solo dance interactions,
+                                which opened the potential for communal exploration with SoleMix.</p> 
+                
+                </div>
+
+        </div>
+    </div>
+
+      
+<img class="img-container s-four"></img>
+
+<div class="page-container">
+
+       <div class="intro-container">
+              
+               <div class="title-container">
+
+                   <div id="title-copy">Fabricating Sensors</div>
+                           
+               </div>
+
+               <div id="listing-copy">
+                
+                We chose to use two FSR sensors and an accelerometer in the slipper.
+                The FSRs target weight shifts in the heel and toe, while the accelerometer maps to changes in pitch and harmonics.
+                We began construction of a single test slipper by cutting away discrete portions inside the sole to house the sensors,
+                feeding the wiring along the back of the heel for easy troubleshooting.
+                The end result was a prototype which remained relatively lightweight and flexible for a dancer to move in.
+
+                <p>Two Adafruit Feather M0 microprocessors (with built-in WiFi modules) are used for the data transfer between
+                        the Sole Mix dance shoe and the sound playback device, such as a laptop.
+                        One Feather transfers the collected data from the sensors on the shoe to the other Feather, acting as a receiver unit wirelessly.
+                    </p>
+                    
+                </div>
+              
+        </div>
+    </div>
+
+<img class="img-container s-five"></img>
+
+        <div class="page-container">
+        
+               <div class="intro-container">
+                      
+                       <div class="title-container">
+        
+                           <div id="title-copy">Sound Generation</div>
+                                   
+                       </div>
+        
+                       <div id="listing-copy">
+                        
+                            We use Max MSP, an audio art software, to write the code for the sound generation.
+                            We read the sensor outputs from the arduino directly into Max MSP, then convert the data
+                            to playlist objects in Max to trigger audio outputs. 
+                            
+                            <p>For the sound layering, we play an ambient track in the background when the program stats.
+                                    The force sensors in the heel and toe have thresholds targeted at the dancer’s weight, and trigger different drum beats. 
+                                    The accelerometer maps quick acceleration within a half a second. Based on the rate of acceleration, we layer in harmonizing audio files.
+                                    </p>
+
+                            These sounds are then stitched together to create a music file in real time, which can also be stored for later.
+                            
+                        </div>
+                      
+                </div>
+        
+                   
+
+           
+    
+    <div id="bottom-mark"><b>Designed and Developed by</b> Franchesca Spektor</div>
+</div>
+       
+    
+		
+</div>
+	
+	
+
+</body>
+</html>
